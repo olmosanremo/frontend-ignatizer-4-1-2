@@ -4,7 +4,7 @@ import ColorPanel from './components/ColorPanel.jsx';
 import DrawingList from './components/DrawingList';
 import SplashScreen from './components/SplashScreen';
 import SoundControls from './components/SoundControls';
-import SaveClearButtons from './components/SaveClearButtons';
+import EraseClearButtons from './components/EraseClearButtons.jsx';
 import TrackNameInput from './components/TrackNameInput'; // Import the new component
 import * as Tone from 'tone';
 import {saveDrawing, loadDrawing, updateDrawing, getAllDrawings, deleteDrawing} from './backendApi/api';
@@ -208,8 +208,8 @@ const App = () => {
                             handleSave={handleSave}
                             setIsDrawingListVisible={setIsDrawingListVisible}
                         />
-                        <SaveClearButtons clearDrawing={clearDrawing} toggleEraseMode={toggleEraseMode}
-                                          isErasing={isErasing}/>
+                        <EraseClearButtons clearDrawing={clearDrawing} toggleEraseMode={toggleEraseMode}
+                                           isErasing={isErasing}/>
                         <ColorPanel setColor={setColor}/>
                         <TrackNameInput trackName={trackName} setTrackName={setTrackName}/>
 

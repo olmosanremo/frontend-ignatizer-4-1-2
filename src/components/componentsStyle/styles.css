@@ -1,5 +1,5 @@
 .custom-button {
-    background-image: url('../../../public/multiplay.bmp'); /* Stelle sicher, dass der Pfad korrekt ist */
+    background-image: url('../../img/multiplay.bmp'); /* Stelle sicher, dass der Pfad korrekt ist */
     background-size: cover;
     background-position: center;
     border: none;
