@@ -47,7 +47,7 @@ const SaveClearButtons = ({ clearDrawing, toggleEraseMode, isErasing }) => {
             <button
                 className="custom-button toggle-button"
                 onClick={toggleEraseMode}
-                style={{ backgroundImage: isErasing ? `url(${eraseImage})` : `url(${writeImage})` }}
+                style={{ backgroundImage: isErasing ? `url(${writeImage})` : `url(${eraseImage})` }}
             >
             </button>
         </div>
